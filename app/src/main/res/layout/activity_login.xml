@@ -52,7 +52,13 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold" />
 
-
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="carrito"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/carrito" />
     <TextView
         android:id="@+id/TextView01"
         android:layout_width="wrap_content"
