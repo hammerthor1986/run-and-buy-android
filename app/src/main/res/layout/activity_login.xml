@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="#ffff9d1b">
 
     <Button
         android:id="@+id/register"
@@ -35,7 +35,8 @@
         android:ems="10"
         android:inputType="textPassword"
         android:layout_below="@+id/TextView01"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:background="#ffffffff">
 
         <requestFocus />
     </EditText>
@@ -56,9 +57,15 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="center_vertical"
-        android:contentDescription="carrito"
+        android:contentDescription="car"
         android:scaleType="fitCenter"
-        android:src="@mipmap/carrito" />
+        android:src="@mipmap/car"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_above="@+id/username"
+        android:layout_toLeftOf="@+id/textView2" />
     <TextView
         android:id="@+id/TextView01"
         android:layout_width="wrap_content"
@@ -75,15 +82,16 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_below="@+id/textView1"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password" />
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_alignStart="@+id/TextView01"
+        android:background="#ffffffff" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Username"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="96dp"
         android:layout_below="@+id/textView2"
         android:layout_alignLeft="@+id/username"
         android:layout_alignStart="@+id/username" />
