@@ -75,26 +75,26 @@ public class LoginActivity extends Activity implements OnClickListener {
                 mSubmit.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        ref.authWithPassword(user.getText().toString(),
-                                pass.getText().toString(),
-                                new Firebase.AuthResultHandler() {
-                                    @Override
-                                    public void onAuthenticated(AuthData authData) {
-                                        System.out.println("User ID: " + authData.getUid() + ", Provider: " + authData.getProvider());
-                                        Toast toast = Toast.makeText(getApplicationContext(),
-                                                "User ID: " + authData.getUid() + ", Provider: " + authData.getProvider(),
-                                                Toast.LENGTH_LONG);
-                                        toast.show();
-                                    }
-
-                                    @Override
-                                    public void onAuthenticationError(FirebaseError firebaseError) {
-                                        Toast toast = Toast.makeText(getApplicationContext(),
-                                                firebaseError.getMessage(),
-                                                Toast.LENGTH_LONG);
-                                        toast.show();
-                                    }
-                                });
+                        ref.authWithPassword(
+                            user.getText().toString(),
+                            pass.getText().toString(),
+                            new Firebase.AuthResultHandler() {
+                                @Override
+                                public void onAuthenticated(AuthData authData) {
+                                    System.out.println("User ID: " + authData.getUid() + ", Provider: " + authData.getProvider());
+                                    Toast toast = Toast.makeText(getApplicationContext(),
+                                            "User ID: " + authData.getUid() + ", Provider: " + authData.getProvider(),
+                                            Toast.LENGTH_LONG);
+                                    toast.show();
+                                }
+                                @Override
+                                public void onAuthenticationError(FirebaseError firebaseError) {
+                                    Toast toast = Toast.makeText(getApplicationContext(),
+                                            firebaseError.getMessage(),
+                                            Toast.LENGTH_LONG);
+                                    toast.show();
+                                }
+                            });
                     }
                 });
                 break;
