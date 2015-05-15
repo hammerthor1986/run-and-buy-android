@@ -1,19 +1,29 @@
 package com.example.ams2_21.registrom13;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
 
+import com.firebase.client.Firebase;
 
-public class RegisterActivity extends ActionBarActivity {
+public class RegisterActivity extends Activity implements OnClickListener {
+
+    private static Firebase ref = new Firebase("https://run-n-buy.firebaseio.com/");
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Firebase.setAndroidContext(this);
         setContentView(R.layout.activity_register);
     }
 
+    @Override
+    public void onClick(View v) {
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

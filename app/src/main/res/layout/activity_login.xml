@@ -21,27 +21,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:layout_below="@+id/password"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/passTextField"
+        android:layout_alignLeft="@+id/passTextField"
+        android:layout_alignStart="@+id/passTextField"
         android:layout_marginTop="58dp"
-        android:layout_alignRight="@+id/password"
-        android:layout_alignEnd="@+id/password" />
+        android:layout_alignRight="@+id/passTextField"
+        android:layout_alignEnd="@+id/passTextField" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passTextField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        android:layout_below="@+id/TextView01"
+        android:layout_below="@+id/passTextView"
         android:layout_centerHorizontal="true">
 
         <requestFocus />
     </EditText>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/registerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -60,32 +60,32 @@
         android:scaleType="fitCenter"
         android:src="@mipmap/carrito" />
     <TextView
-        android:id="@+id/TextView01"
+        android:id="@+id/passTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Password"
         android:layout_marginTop="55dp"
-        android:layout_below="@+id/username"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password" />
+        android:layout_below="@+id/emailTextField"
+        android:layout_alignLeft="@+id/passTextField"
+        android:layout_alignStart="@+id/passTextField" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/emailTextField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_below="@+id/textView1"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password" />
+        android:layout_below="@+id/emailTextView"
+        android:layout_alignLeft="@+id/passTextField"
+        android:layout_alignStart="@+id/passTextField" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/emailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Username"
         android:layout_marginTop="55dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignLeft="@+id/username"
-        android:layout_alignStart="@+id/username" />
+        android:layout_below="@+id/registerTitle"
+        android:layout_alignLeft="@+id/emailTextField"
+        android:layout_alignStart="@+id/emailTextField" />
 
 </RelativeLayout>
