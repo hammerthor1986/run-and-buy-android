@@ -59,6 +59,7 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
     // UI references.
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
+    private EditText pallaso;
     private View mProgressView;
     private View mEmailLoginFormView;
     private SignInButton mPlusSignInButton;
